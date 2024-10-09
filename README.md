@@ -18,13 +18,13 @@ This project serves as a parent POM for managing Spring Boot applications, centr
 
 1. **Inherit from the Parent POM**: In your child modules, set the parent as follows in the `pom.xml`:
 
-    ```xml
-    <parent>
-        <groupId>com.erebelo</groupId>
-        <artifactId>spring-common-parent</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
-    </parent>
-    ```
+```xml
+<parent>
+    <groupId>com.erebelo</groupId>
+    <artifactId>spring-common-parent</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+</parent>
+```
 
 2. **Add Dependencies**: Add your specific dependencies to the child module's `pom.xml` as needed.
 
@@ -34,6 +34,6 @@ This project serves as a parent POM for managing Spring Boot applications, centr
 
 Use the following command to build and format the project:
 
-    ```bash
-    mvn clean install
-    ```
+```sh
+mvn clean install
+```
