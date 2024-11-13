@@ -11,7 +11,7 @@ This project serves as a parent POM for managing Spring Boot applications, centr
 ## Requirements
 
 - Java 17
-- Spring Boot 3.3.4
+- Spring Boot 3.3.5
 - Apache Maven 3.8.6
 
 ## How to Use
