@@ -86,7 +86,6 @@ To publish a new version of the package to GitHub Packages, follow these steps:
    - Set the following scopes:
      - `write:packages` (to publish packages)
      - `read:packages` (to download packages)
-     - `delete:packages` (if you want to delete packages)
    - Click **Generate token**.
 
 2. **Set Up Maven Authentication**:
