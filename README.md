@@ -32,7 +32,7 @@ This project serves as a parent POM for managing Spring Boot applications, centr
    ```xml
    <servers>
      <server>
-       <id>github</id>
+       <id>github-spring-common-parent</id>
        <username>USERNAME</username>
        <password>TOKEN</password>
      </server>
@@ -54,7 +54,7 @@ This project serves as a parent POM for managing Spring Boot applications, centr
    ```xml
      <repositories>
        <repository>
-         <id>github</id>
+         <id>github-spring-common-parent</id>
          <url>https://maven.pkg.github.com/erebelo/spring-common-parent</url>
        </repository>
      </repositories>
@@ -95,7 +95,7 @@ To publish a new version of the package to GitHub Packages, follow these steps:
    ```xml
    <servers>
      <server>
-       <id>github</id>
+       <id>github-spring-common-parent</id>
        <username>USERNAME</username>
        <password>TOKEN</password>
      </server>
@@ -111,7 +111,7 @@ To publish a new version of the package to GitHub Packages, follow these steps:
    ```xml
    <distributionManagement>
        <repository>
-           <id>github</id>
+           <id>github-spring-common-parent</id>
            <name>GitHub Packages - spring-common-parent</name>
            <url>https://maven.pkg.github.com/erebelo/spring-common-parent</url>
        </repository>

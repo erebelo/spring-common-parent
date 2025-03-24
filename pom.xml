@@ -19,7 +19,7 @@
 
     <distributionManagement>
         <repository>
-            <id>github</id>
+            <id>github-spring-common-parent</id>
             <name>GitHub Packages - spring-common-parent</name>
             <url>https://maven.pkg.github.com/erebelo/spring-common-parent</url>
         </repository>
