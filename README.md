@@ -30,7 +30,7 @@ This project serves as a parent POM for managing Spring Boot applications, centr
      <repositories>
        <repository>
          <id>github</id>
-         <url>https://maven.pkg.github.com/erebelo/spring-common-lib</url>
+         <url>https://maven.pkg.github.com/erebelo/spring-common-parent</url>
        </repository>
      </repositories>
    ```
