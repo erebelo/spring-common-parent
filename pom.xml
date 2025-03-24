@@ -17,6 +17,14 @@
     <name>spring-common-parent</name>
     <description>Parent Project for Spring Boot Applications</description>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages - spring-common-lib</name>
+            <url>https://maven.pkg.github.com/erebelo/spring-common-lib</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <!--Code formatter plugin-->
