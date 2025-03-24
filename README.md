@@ -48,3 +48,41 @@ Use the following command to build and format the project:
 ```sh
 mvn clean install
 ```
+
+## Publish a New Package/Release Version
+
+To publish a new version of the package to GitHub Packages, follow these steps:
+
+1. **Generate a Personal Access Token**:
+
+   - Go to GitHub account -> **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)** -> **Generate new token (classic)**.
+   - Fill out the **Note** field: `Package publishing`.
+   - Set the following scopes:
+     - `write:packages` (to publish packages)
+     - `read:packages` (to download packages)
+     - `delete:packages` (if you want to delete packages)
+   - Click **Generate token**.
+
+2. **Set Up Maven Authentication**:
+
+   - In your local Maven `settings.xml`, define the GitHub repository authentication using the following structure:
+
+     ```xml
+     <servers>
+       <server>
+         <id>github</id>
+         <username>USERNAME</username>
+         <password>TOKEN</password>
+       </server>
+     </servers>
+     ```
+
+   **NOTE**: Replace `USERNAME` with your GitHub username and `TOKEN` with the personal access token you just generated.
+
+3. **Deploy to GitHub Packages**:
+
+   - Inside IntelliJ IDEA, open your project and navigate to **Maven** -> **Execute Maven Goal**.
+   - In the **Goal** field, enter `deploy` and click **OK**. This will run `mvn deploy` using the authentication settings from your `settings.xml`.
+
+4. **Verify the Package**:
+   - Once the deployment is successful, navigate to your GitHub repository and go to the **Packages** tab to verify that the new version of the package is listed.
