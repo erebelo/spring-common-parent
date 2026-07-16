@@ -12,7 +12,7 @@
 
     <groupId>com.erebelo</groupId>
     <artifactId>spring-common-parent</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>2.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>spring-common-parent</name>
     <description>Parent Project for Spring Boot Applications</description>
